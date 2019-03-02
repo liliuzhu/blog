@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Luther Li&#39;s Blog</title>
+  
+  <subtitle>越努力，越精彩</subtitle>
+  <link href="/blog/atom.xml" rel="self"/>
+  
+  <link href="http://liliuzhu.gitee.io/blog/"/>
+  <updated>2019-02-28T10:30:11.785Z</updated>
+  <id>http://liliuzhu.gitee.io/blog/</id>
+  
+  <author>
+    <name>Luther Li</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建可通过外网访问的内网服务器</title>
+    <link href="http://liliuzhu.gitee.io/blog/2017/12/Intranet_mapping.html"/>
+    <id>http://liliuzhu.gitee.io/blog/2017/12/Intranet_mapping.html</id>
+    <published>2017-12-15T23:55:23.000Z</published>
+    <updated>2019-02-28T10:30:11.785Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img.blog.csdn.net/20171215230615038?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveXVob3V4aW55YQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="映射隧道"></p><p>这是本人，第一次写博客，文采不好，技术也菜鸟，请不要见怪。</p><p>前一段时间裸辞了，于是开始广投简历。可是现实是非常的残酷，年底了面试的通知很少。想着是不是自己的简历上干货太少了，不如把自己之前做的项目连接放在简历上。<br><a id="more"></a><br>可是可是。。。，现实又很残酷。我们做的项目大多是企业内部系统，只能通过内网来访问。更为严重的是我们的主管是不会告诉我们客户的正式服务器的。出来面试，连作品连接都没有，都不好意思说自己是做web前端的[尴尬]。</p><p>那怎么办呢？没有作品链接，简历被淘汰的概率也会大好多，后来想起来可以用自己的电脑搭建一台服务器，说干就干。<br>后来找到了一些免费的第三方工具并且都一一实验了一下，有些成功了，有些也失败了。</p><h2 id="ittun"><a href="#ittun" class="headerlink" title="ittun"></a>ittun</h2><p>但是可能是我的网络环境的问题，实际用的时候却是这样的<br><img src="http://img.blog.csdn.net/20171215193316650?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveXVob3V4aW55YQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="一直处于重新连接状态"><br>结果第一个内网映射工具，使用失败。<br>附上官网地址<a href="http://www.ittun.com/" target="_blank" rel="noopener">http://www.ittun.com/</a></p><h2 id="localtunnel"><a href="#localtunnel" class="headerlink" title="localtunnel"></a>localtunnel</h2><p>也是网上找的，是基于Node.js的一个模块，说是可以将内网服务器暴露至公网。基于node.js，倒很适合我的胃口。结果也试几次还是失败。也可能是我用的方法还不对，继续寻找。</p><h2 id="JNat"><a href="#JNat" class="headerlink" title="JNat"></a>JNat</h2><p>终于这个是可以用的了，试了几次除了速度慢一些，还都好用，不过需要这个工具需要在官网上申请免费的key，而且一个帐号只能申请一个免费的key，可以指定二级域名。不过后来测试的时候还是发现了一个问题，就是在客户端上传文件的JNat会出现错误，而且文件上传失败.希望以后能够得到解决。<br>在此附上JNat官网地址<a href="http://www.j2eeall.com/" target="_blank" rel="noopener">http://www.j2eeall.com</a></p><h2 id="natapp"><a href="#natapp" class="headerlink" title="natapp"></a>natapp</h2><p>这个工具也是比较好用的，不过也需要去官网注册，而且还要实名认证，还是比较麻烦的。一个注册用户可免费拥有2条不同协议的隧道。<br>客户端上传文件时也没有问题。不过这个工具也有不好的地方，就是免费版不能自定义二级域名。过一段时间不用，再去重新开启映射就会随机更新一个二级域名，这点比较坑，要是在app中应用岂不也是每次更新了二级域名，都要重新打包不可。<br>不过，这已经不错了，毕竟人家是免费的[呲牙]！附上官方网址<a href="https://natapp.cn" target="_blank" rel="noopener">https://natapp.cn</a></p><h2 id="Sunny-Ngrok"><a href="#Sunny-Ngrok" class="headerlink" title="Sunny-Ngrok"></a>Sunny-Ngrok</h2><p>这是最近才发现的一个内网穿透工具，好像还挺好用，官网讨论群也比较多。官网上介绍的也比较详细。官网上说其具有以下几方面优点：</p><ol><li>提供免费内网穿透服务，免费服务器支持绑定自定义域名</li><li>管理内网服务器，内网web进行演示</li><li>快速开发微信程序和第三方支付平台调试</li><li>本地WEB外网访问、本地开发微信、TCP端口转发</li><li>本站新增FRP服务器，基于 FRP 实现https、udp转发</li><li>无需任何配置，下载客户端之后直接一条命令让外网访问您的内网不再是距离</li></ol><p>然而对于我来收说比较的可悲，和ittun一样都存在着一样的问题—无法连接<br><img src="http://img.blog.csdn.net/20171215233706536?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveXVob3V4aW55YQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p><p>应该和ittun想同的原因，也不知道该怎么破，还在的等待技术群的回复。附上官网链接<a href="https://www.ngrok.cc/" target="_blank" rel="noopener">https://www.ngrok.cc/</a></p><blockquote><p>个人技术博客 <a href="http://liliuzhu.gitee.io/blog">http://liliuzhu.gitee.io/blog</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20171215230615038?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveXVob3V4aW55YQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;映射隧道&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这是本人，第一次写博客，文采不好，技术也菜鸟，请不要见怪。&lt;/p&gt;
+&lt;p&gt;前一段时间裸辞了，于是开始广投简历。可是现实是非常的残酷，年底了面试的通知很少。想着是不是自己的简历上干货太少了，不如把自己之前做的项目连接放在简历上。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="内网映射" scheme="http://liliuzhu.gitee.io/blog/categories/%E5%86%85%E7%BD%91%E6%98%A0%E5%B0%84/"/>
+    
+    
+      <category term="内网映射" scheme="http://liliuzhu.gitee.io/blog/tags/%E5%86%85%E7%BD%91%E6%98%A0%E5%B0%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://liliuzhu.gitee.io/blog/2017/12/hello-world.html"/>
+    <id>http://liliuzhu.gitee.io/blog/2017/12/hello-world.html</id>
+    <published>2017-12-01T23:55:23.000Z</published>
+    <updated>2019-02-28T10:30:11.787Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><a id="more"></a><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

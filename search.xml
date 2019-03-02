@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[搭建可通过外网访问的内网服务器]]></title>
+    <url>%2Fblog%2F2017%2F12%2FIntranet_mapping.html</url>
+    <content type="text"><![CDATA[这是本人，第一次写博客，文采不好，技术也菜鸟，请不要见怪。 前一段时间裸辞了，于是开始广投简历。可是现实是非常的残酷，年底了面试的通知很少。想着是不是自己的简历上干货太少了，不如把自己之前做的项目连接放在简历上。可是可是。。。，现实又很残酷。我们做的项目大多是企业内部系统，只能通过内网来访问。更为严重的是我们的主管是不会告诉我们客户的正式服务器的。出来面试，连作品连接都没有，都不好意思说自己是做web前端的[尴尬]。 那怎么办呢？没有作品链接，简历被淘汰的概率也会大好多，后来想起来可以用自己的电脑搭建一台服务器，说干就干。后来找到了一些免费的第三方工具并且都一一实验了一下，有些成功了，有些也失败了。 ittun但是可能是我的网络环境的问题，实际用的时候却是这样的结果第一个内网映射工具，使用失败。附上官网地址http://www.ittun.com/ localtunnel也是网上找的，是基于Node.js的一个模块，说是可以将内网服务器暴露至公网。基于node.js，倒很适合我的胃口。结果也试几次还是失败。也可能是我用的方法还不对，继续寻找。 JNat终于这个是可以用的了，试了几次除了速度慢一些，还都好用，不过需要这个工具需要在官网上申请免费的key，而且一个帐号只能申请一个免费的key，可以指定二级域名。不过后来测试的时候还是发现了一个问题，就是在客户端上传文件的JNat会出现错误，而且文件上传失败.希望以后能够得到解决。在此附上JNat官网地址http://www.j2eeall.com natapp这个工具也是比较好用的，不过也需要去官网注册，而且还要实名认证，还是比较麻烦的。一个注册用户可免费拥有2条不同协议的隧道。客户端上传文件时也没有问题。不过这个工具也有不好的地方，就是免费版不能自定义二级域名。过一段时间不用，再去重新开启映射就会随机更新一个二级域名，这点比较坑，要是在app中应用岂不也是每次更新了二级域名，都要重新打包不可。不过，这已经不错了，毕竟人家是免费的[呲牙]！附上官方网址https://natapp.cn Sunny-Ngrok这是最近才发现的一个内网穿透工具，好像还挺好用，官网讨论群也比较多。官网上介绍的也比较详细。官网上说其具有以下几方面优点： 提供免费内网穿透服务，免费服务器支持绑定自定义域名 管理内网服务器，内网web进行演示 快速开发微信程序和第三方支付平台调试 本地WEB外网访问、本地开发微信、TCP端口转发 本站新增FRP服务器，基于 FRP 实现https、udp转发 无需任何配置，下载客户端之后直接一条命令让外网访问您的内网不再是距离 然而对于我来收说比较的可悲，和ittun一样都存在着一样的问题—无法连接 应该和ittun想同的原因，也不知道该怎么破，还在的等待技术群的回复。附上官网链接https://www.ngrok.cc/ 个人技术博客 http://liliuzhu.gitee.io/blog]]></content>
+      <categories>
+        <category>内网映射</category>
+      </categories>
+      <tags>
+        <tag>内网映射</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fblog%2F2017%2F12%2Fhello-world.html</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>

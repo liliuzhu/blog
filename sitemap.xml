@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://liliuzhu.gitee.io/blog/2019/10/vue_use_babel-polyfill.html</loc>
+    
+    <lastmod>2019-10-23T08:54:23.652Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://liliuzhu.gitee.io/blog/2019/06/Internal-technology-sharing-WebSocket.html</loc>
     
     <lastmod>2019-07-30T08:19:32.441Z</lastmod>

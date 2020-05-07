@@ -1,6 +1,6 @@
-http://liliuzhu.gitee.io/blog/2019/10/vue_use_babel-polyfill.html
-http://liliuzhu.gitee.io/blog/2019/06/Internal-technology-sharing-WebSocket.html
-http://liliuzhu.gitee.io/blog/2019/04/JS-classicic-sorting-algorithms.html
-http://liliuzhu.gitee.io/blog/2019/03/gitpage+hexo_develop_blog.html
-http://liliuzhu.gitee.io/blog/2017/12/Intranet_mapping.html
-http://liliuzhu.gitee.io/blog/2017/12/hello-world.html
+https://liliuzhu.gitee.io/blog/2019/10/vue_use_babel-polyfill.html
+https://liliuzhu.gitee.io/blog/2019/06/Internal-technology-sharing-WebSocket.html
+https://liliuzhu.gitee.io/blog/2019/04/JS-classicic-sorting-algorithms.html
+https://liliuzhu.gitee.io/blog/2019/03/gitpage+hexo_develop_blog.html
+https://liliuzhu.gitee.io/blog/2017/12/Intranet_mapping.html
+https://liliuzhu.gitee.io/blog/2017/12/hello-world.html

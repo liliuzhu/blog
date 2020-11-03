@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://liliuzhu.gitee.io/blog/2020/11/JS-design-patterns-share-1.html</loc>
+    
+    <lastmod>2020-11-03T11:39:37.434Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liliuzhu.gitee.io/blog/2020/11/vue-router-principle-sharing.html</loc>
+    
+    <lastmod>2020-11-03T10:51:30.548Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liliuzhu.gitee.io/blog/2019/10/vue_use_babel-polyfill.html</loc>
+    
+    <lastmod>2020-11-03T10:38:41.786Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://liliuzhu.gitee.io/blog/2019/03/gitpage+hexo_develop_blog.html</loc>
     
     <lastmod>2020-05-07T09:22:10.551Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>https://liliuzhu.gitee.io/blog/2017/12/Intranet_mapping.html</loc>
     
     <lastmod>2020-05-07T09:22:10.537Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liliuzhu.gitee.io/blog/2019/10/vue_use_babel-polyfill.html</loc>
-    
-    <lastmod>2020-05-07T09:22:10.513Z</lastmod>
     
   </url>
   

@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://liliuzhu.gitee.io/blog/blog/2020/11/JS-design-patterns-share-1.html</loc>
+    <lastmod>2020-11-03</lastmod>
+  </url>  <url>
+    <loc>https://liliuzhu.gitee.io/blog/blog/2020/11/vue-router-principle-sharing.html</loc>
+    <lastmod>2020-11-03</lastmod>
+  </url>  <url>
+    <loc>https://liliuzhu.gitee.io/blog/blog/2019/10/vue_use_babel-polyfill.html</loc>
+    <lastmod>2020-11-03</lastmod>
+  </url>  <url>
     <loc>https://liliuzhu.gitee.io/blog/blog/2019/03/gitpage+hexo_develop_blog.html</loc>
     <lastmod>2020-05-07</lastmod>
   </url>  <url>
     <loc>https://liliuzhu.gitee.io/blog/blog/2017/12/Intranet_mapping.html</loc>
-    <lastmod>2020-05-07</lastmod>
-  </url>  <url>
-    <loc>https://liliuzhu.gitee.io/blog/blog/2019/10/vue_use_babel-polyfill.html</loc>
     <lastmod>2020-05-07</lastmod>
   </url>  <url>
     <loc>https://liliuzhu.gitee.io/blog/blog/2019/06/Internal-technology-sharing-WebSocket.html</loc>

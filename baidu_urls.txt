@@ -1,3 +1,5 @@
+https://liliuzhu.gitee.io/blog/2020/11/JS-design-patterns-share-1.html
+https://liliuzhu.gitee.io/blog/2020/11/vue-router-principle-sharing.html
 https://liliuzhu.gitee.io/blog/2019/10/vue_use_babel-polyfill.html
 https://liliuzhu.gitee.io/blog/2019/06/Internal-technology-sharing-WebSocket.html
 https://liliuzhu.gitee.io/blog/2019/04/JS-classicic-sorting-algorithms.html
